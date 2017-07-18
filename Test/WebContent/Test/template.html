@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function ismobile(){
+		var u = navigator.userAgent;
+		var flag2 = (u.indexOf('Android') > -1 || u.indexOf('iPhone') > -1 );
+		var flag = (!!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/);
+		if(flag2){
+			window.location="3.html";
+		}else{
+			window.location="2.html";
+		}
+		alert(flag+"---"+ flag2);
+	}
+</script>
+</head>
+<body onload="ismobile();">
+<div>
+	<button></button>
+</div>
+</body>
+</html>
